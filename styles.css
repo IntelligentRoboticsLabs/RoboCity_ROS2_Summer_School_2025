@@ -90,8 +90,37 @@ header {
   display: block;
 }
 
+.header-sponsor {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.5rem 0.9rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.header-sponsor-label {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.header-sponsor img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 @media (max-width: 520px) {
   .header-partners img { height: 48px; }
+  .header-sponsor img { height: 44px; }
 }
 
 main {
